@@ -1,468 +1,642 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="top">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- <meta
+			name="description"
+			content="Rohith Enjety is a self-taught Frontend and Mobile (Android & IOS - Cross Platform) Developer based in Lagos State, Nigeria, who is passionate about web and mobile development." />
+		<meta
+			name="keywords"
+			content="Frontend Developer, Mobile Developer, Open Source, Freelance Web Developer, Freelance Mobile Developer, React Native Developer, Developer Portfolio" />
 
-<head>
-  <style>
-    .justified {
-        text-align: justify;
-    }
-    .interactive-word {
-            color: rgb(174, 195, 38);
-            cursor: pointer;
-           
-            /* Keep the text color the same as the surrounding text */
-            cursor: pointer; /* Change cursor to pointer */
-            text-decoration: none;
-        }
-</style>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+		<meta name="description" content="Page description" />
+		<meta property="og:title" content="Rohith Enjety - Frontend Developer" />
+		<meta
+			property="og:description"
+			content="Rohith Enjety is a self-taught Frontend Web Developer based in Lagos State, Nigeria,  who specializes in building exceptional digital experience and passionate about web and mobile development." />
+		<meta
+			property="og:image"
+			content="" /> -->
+		<meta property="og:image:alt" content="Rohith Enjety" />
+		<meta property="og:locale" content="en_GB" />
+		<meta property="og:type" content="website" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta property="og:url" content="/" />
+		<meta name="twitter:card" content="summary" />
+		<meta name="theme-color" content="#000000" />
+		<meta name="robots" content="index, follow" />
 
-  <title>ENJETY ROHITH</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+		<link rel="icon" href="./assets/favicon-32x32.png" />
+		<link rel="icon" href="/favicon.ico" />
+		<link rel="apple-touch-icon" href="./assets/apple-touch-icon.png" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+		<!-- boxicons -->
+		<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+		<script src="assets/js/main.js" defer></script>
+		<title>Rohith Enjety - Frontend Developer</title>
+	</head>
+	<body>
+		<!-- only for keyboard users -->
+		<a class="skip-to-content" href="#main-content">Skip to content</a>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+		<header class="main-header">
+			<nav class="nav slide-in-top">
+				<div class="container">
+					<a href="#">
+						<img src="./assets/img/Rohith_formal.jpg" alt="Rohith" class="logo" />
+						<title>Logo</title>
+					</a>
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+					<ul class="nav-list">
+						<li>
+							<a href="#about" class="nav-links hover-effect">About</a>
+						</li>
+						<li>
+							<a href="#skills" class="nav-links hover-effect">Skills</a>
+						</li>
+						<li>
+							<a href="#projects" class="nav-links hover-effect">Projects</a>
+						</li>
+						<li>
+							<a href="#contact" class="nav-links hover-effect">Contact</a>
+						</li>
+            <li>
+              <a href="rohith_resume.pdf" class="nav-links hover-effect" target="_blank">Resume</a>
+						</li>
+					</ul>
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+					<ul class="social-nav">
+						<li>
+							<a
+								href="https://x.com/RohithEnjety"
+								rel="noreferrer"
+								target="_blank"
+								aria-label="link to twitter profile">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="18"
+									height="18"
+									viewBox="0 0 24 24"
+									style="fill: currentColor">
+									<path
+										d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z"></path>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a
+								href="https://www.linkedin.com/in/rohith-enjety-64106a228/"
+								rel="noreferrer"
+								target="_blank"
+								aria-label="link to linkedin profile"
+								><svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="18"
+									height="18"
+									viewBox="0 0 24 24"
+									style="fill: currentColor">
+									<circle cx="4.983" cy="5.009" r="2.188"></circle>
+									<path
+										d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a
+								href="https://github.com/rohithenjety/"
+								rel="noreferrer"
+								target="_blank"
+								aria-label="link to github account"
+								><svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="18"
+									height="18"
+									viewBox="0 0 24 24"
+									style="fill: currentColor">
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"></path>
+								</svg>
+							</a>
+						</li>
+            <li>
+              <a
+                  href="https://leetcode.com/u/rohithenjety/"
+                  rel="noreferrer"
+                  target="_blank"
+                  aria-label="link to leetcode profile"
+              >
+                 
 
-  <!-- =======================================================
-  * Template Name: iPortfolio
-  * Updated: Jan 29 2024 with Bootstrap v5.3.2
-  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-</head>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M13.483 0a1.37 1.37 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.3 5.3 0 0 0-1.209 2.104a5 5 0 0 0-.125.513a5.5 5.5 0 0 0 .062 2.362a6 6 0 0 0 .349 1.017a5.9 5.9 0 0 0 1.271 1.818l4.277 4.193l.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.38 1.38 0 0 0-1.951-.003l-2.396 2.392a3.02 3.02 0 0 1-4.205.038l-.02-.019l-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.7 2.7 0 0 1 .066-.523a2.55 2.55 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0m-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382a1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382a1.38 1.38 0 0 0-1.38-1.382z"/></svg>
+                      
+              </a>
+          </li>
+          
+					</ul>
 
-<body>
+					<div class="hamburger">
+						<div class="line-menu half start"></div>
+						<div class="line-menu"></div>
+						<div class="line-menu half end"></div>
+					</div>
+				</div>
+			</nav>
+		</header>
 
-  <!-- ======= Mobile nav toggle button ======= -->
-  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+		<main id="main-content">
+			<!-- hero section -->
+			<section class="hero">
+				<div class="container">
+					<article class="hero-text bounce-in-left">
+						<div>
+							<p class="subtitle">hi there 👋🏽, i'm</p>
+							<h1 class="name">Rohith Enjety</h1>
+						</div>
+						<div>
+							<p class="intro">
+							 Final year B.Tech Student .
+							</p>
 
-  <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="d-flex flex-column">
+							<div class="hero-btn-container">
+								<a href="mailto:rohithenjety@gmail.com" class="btn hire-btn">
+									Hire Me !
+								</a>
+								<!-- <a href="#" download="" class="btn download-link"
+									>Download CV</a
+								> -->
+							</div>
+						</div>
+					</article>
+					<!-- <img
+						src="./assets/coding-ground.png"
+						alt="coding desk"
+						class="fade-in code" /> -->
+				</div>
+			</section>
 
-      <div class="profile">
-        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">Enjety Rohith</a></h1>
-        <div class="social-links mt-3 text-center">
-          <a href="https://twitter.com/RohithEnjety"  target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
-          <a href="https://github.com/rohithenjety" target="_blank" class="github"><i class="bx bxl-github"></i></a>
-          <a href="https://www.instagram.com/_rohithenjety_/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <!-- <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>--> 
-          <a href="https://www.linkedin.com/in/rohith-enjety-64106a228/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        </div>
-      </div>
+			<!-- about section -->
+			<section class="about-me" id="about">
+				<div class="container" data-aos="fade-up">
+					<img src="./assets/img/Rohith_formal.jpg" alt="Rohith Enjety" />
+					<article>
+						<p class="subtitle">Who is Rohith Enjety?</p>
+						<h2 class="title">A Bit About Me</h2>
+						<div class="about">
+							<p>
+								I'm a certified google cloud - professional cloud architect😎.
+							</p>
+							<p>
+								As a fresher, I have been learning and developing my technical skills.
+                 I contributed to my team by working on a few projects, where I wrote 
+                 all the code and maintained it. 
+							</p>
+							<p>
+								Through my studies, I've gained a solid understanding of web technologies, 
+                and I have used those technologies to create the college front page. 
+                I have also updated everything on GitHub for accessibility.
+							</p>
+							<p>
+								I am fond of learning new technologies, watching football, and exploring.
+                 I am eager to bring my enthusiasm and fresh perspective to my role,
+                  where I can learn and grow while contributing to the team.
+							</p>
+              <p>
+                I am proficient in languages such as English, Hindi, Telugu, and Spanish, 
+                with Spanish being a language I learned by myself through Duolingo. 😀
+							</p>
+						</div>
+					</article>
+				</div>
+			</section>
 
-      <nav id="navbar" class="nav-menu navbar">
-        <ul>
-          <li><a href="#home" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-       <!--   <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
-          <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>  -->
-          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
-        </ul>
-      </nav><!-- .nav-menu -->
-    </div>
-  </header><!-- End Header -->
+			<!-- my skills -->
+			<section class="my-skills" id="skills" data-aos="fade-up">
+				<div class="container">
+					<article>
+						<p class="subtitle">My Skills</p>
+						<h2 class="title">Technologies I Work With</h2>
 
-  <!-- ======= Hero Section ======= -->
-  <section id="home" class="d-flex flex-column justify-content-center align-items-center">
-    <div class="hero-container" data-aos="fade-in">
-      <h1>Enjety Rohith </h1>
-      <p>I'm <span class="typed" data-typed-items="Professional Cloud Architecture ,Programmer , Software Developer"></span></p>
-    </div>
-  </section><!-- End Hero -->
+						<p class="info">
+							I've been learning all these technologies by utilizing 
+              various online courses and YouTube. 
+              These are the technologies I’ve been working on and am passionate about:
+							<!-- <strong>Flutter & React Native</strong> and here are a few -->
+							
+						</p>
+					</article>
+					<ul>
+						<li>HTML & CSS</li>
+						<li>Javascript</li>
+						<li>Java</li>
+						<li>Python</li>
+						<li>Sql</li>
+						<li>Git</li>
+						<li>Cloud Computing</li>
+            <li>Kali-Linux & ubuntu</li>
+						
+					</ul>
+				</div>
+			</section>
 
-  <main id="main">
+			<!-- projects section -->
+			<section class="projects-section" id="projects">
+				<div class="container">
+					<article data-aos="fade-up">
+						<p class="subtitle">My projects</p>
+						<h2 class="title">Some Things I Built</h2>
+						<p class="info">
+							I love doing projects with a team; it stimulates collaboration and 
+              makes it easier to share ideas and come up with new ones.
+						</p>
+					</article>
+					<section class="projects">
+						<!-- 01 -->
+						<article class="project">
+							<a
+								href="https://github.com/rohithenjety/GenAi-Model"
+								target="_blank"
+								rel="noreferrer"
+								class="project-img"
+								><img
+									src="./assets/img/image.png"
+									alt="the movieflix screenshot"
+									title="the/movieflix"
+							/></a>
+							<div>
+								<h3>01</h3>
+								<h2>RAG-Chatbot</h2>
+								<p>
+                  It is a chatbot that works based on the user's instructions.
+                   Whenever the user gives a prompt, if they use any type of abusive 
+                   or foul language, it will warn them.
+								</p>
+								<ul class="tech-stack">
+									<li>Python</li>
+									<li>Html & Css</li>
+									<li>Gradio</li>
+									<li>Sanity CMS</li>
+									
+								</ul>
+								<!-- <ul class="project-links">
+									<li>
+										<a
+											href="https://www.rohith.com/"
+											target="_blank"
+											rel="noreferrer"
+											class="hover-effect"
+											>Live Site →</a
+										>
+									</li> -->
+									<li>
+										<a
+											href="https://github.com/rohithenjety/GenAi-Model"
+											target="_blank"
+											rel="noreferrer"
+											class="hover-effect"
+											>Github →</a
+										>
+									</li>
+								</ul>
+							</div>
+						</article>
 
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container">
+						<!-- 02 -->
+						<article class="project">
+							<a
+								href="https://p/"
+								target="_blank"
+								rel="noreferrer"
+								class="project-img"
+								><img
+									src="./assets/movieflix.jpg"
+									alt=""
+									title="the/movieflix"
+							/></a>
+							<div>
+								<h3>02</h3>
+								<h2>Post-Quantum Encryption Techniques</h2>
+								<p>
+									It is my final year project, and I am currently working on it.
+                   Our major objective is to use quantum encryption techniques to 
+                   enhance the security and efficiency of messages while analyzing
+                    them with other encryption methodologies.
+								</p>
+								 <ul class="tech-stack">
+									<li>Ipcc7</li>
+									<li>Python</li>
+									<li>PDS</li>
+                  <li>3-Regular Graph</li>
+									
+								</ul> 
+							<!-- 	<ul class="project-links">
+									<li>
+										<a
+											href="https://themovieflix.netlify.app/"
+											target="_blank"
+											rel="noreferrer"
+											class="hover-effect"
+											>Live Site →</a
+										>
+									</li> -->
+									<!-- <li>
+										<a
+											href="httfix"
+											target="_blank"
+											rel="noreferrer"
+											class="hover-effect"
+											>Github →</a
+										>
+									</li> -->
+								</ul>
+							</div>
+						</article>
 
-        <div class="section-title">
-          <h2>About</h2>
-          <p></p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4" data-aos="fade-right">
-            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-          <!--  <h3>UI/UX Designer &amp; Web Developer.</h3> -->
-            <p class="fst-italic">
-        
-            </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>9 july 2003</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+91 9392390887</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
-                
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>21</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>B.Tech</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>rohithenjety@gmail.com</span></li>
-
-                </ul>
-              </div>
-            </div>
-            <p  class="justified" >
-              My goal is to contribute meaningfully to innovative projects, leveraging my solid technical skills 
-              and academic foundation. I am excited to work with an organization that values creativity, 
-              continuous learning, and a supportive work culture, where I can grow both personally and 
-              professionally while making a positive impact. 
-            </p>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End About Section -->
-
-    <!-- ======= Facts Section ======= 
-    <section id="facts" class="facts">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Facts</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="row no-gutters">
-
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
-            <div class="count-box">
-              <i class="bi bi-emoji-smile"></i>
-              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Happy Clients</strong> consequuntur quae</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="100">
-            <div class="count-box">
-              <i class="bi bi-journal-richtext"></i>
-              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Projects</strong> adipisci atque cum quia aut</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="200">
-            <div class="count-box">
-              <i class="bi bi-headset"></i>
-              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Hours Of Support</strong> aut commodi quaerat</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="300">
-            <div class="count-box">
-              <i class="bi bi-people"></i>
-              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Hard Workers</strong> rerum asperiores dolor</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section> End Facts Section -->
-
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Skills</h2>
-          <p style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: 500;">TECHNICAL SKILLS</p>
-        </div>
-
-        <div class="row skills-content">
-
-          <div class="col-lg-6" data-aos="fade-up">
-
-            <div class="progress">
-              <span class="skill">HTML <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">CSS <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">JavaScript <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-
-            <div class="progress">
-              <span class="skill">SQL<i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-
-            <div class="progress">
-              <span class="skill">Nodejs<i class="val">50%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            
-
-
-            <div class="progress">
-              <span class="skill">Kali Linux<i class="val">70%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="progress">
-              <span class="skill">java<i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">python <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-
-            <div class="progress">
-              <span class="skill">C<i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-
-            <div class="progress">
-              <span class="skill">Cloud-Computing<i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">burp suite<i class="val">70%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-             
-            <div class="progress">
-              <span class="skill">ubuntu & parrot os<i class="val">60%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
+						<!-- 03 -->
+						<article class="project">
+							<a
+								href="https://github.com/rohithenjety/paste-production"
+								target="_blank"
+								rel="noreferrer"
+								class="project-img"
+								><img
+									src="./assets/img/paste_productions.jpg"
+									alt="PasteBin Image."
+									title="github profile"
+							/></a>
+							<div>
+								<h3>03</h3>
+								<h2>Paste-Production</h2>
+								<p>
+									Part of the project's implementation involves transferring messages
+                   online by generating a link. When the sender shares the link with 
+                   the receiver, only they can read the securely protected message,
+                    unlike everyone else. This approach enhances security and minimizes 
+                    the risk of message loss.
+								</p>
+								<ul class="tech-stack">
+									<li>Javascript</li>
+									<li>Html & Css</li>
+									
+									<li>Git</li>
+								</ul>
+								<!-- <ul class="project-links">
+									<li>
+										<a
+											href="https://github.com/rohithenjety/paste-production"
+											target="_blank"
+											rel="noreferrer"
+											class="hover-effect"
+											>Live Site →</a
+										>
+									</li> -->
+									<li>
+										<a
+											href="https://github.com/rohithenjety/paste-production"
+											target="_blank"
+											rel="noreferrer"
+											class="hover-effect"
+											>Github →</a
+										>
+									</li>
+								</ul>
+							</div>
+						</article>
          
- 
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Skills Section -->
-
-    <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Resume:</h2>
-         
-
-        </div>
-
-        <div class="row">
-          <div class="col-lg-6" data-aos="fade-up">
-            <h3 class="resume-title">Achievements</h3>
-            <div class="resume-item pb-0">
-              <h4>Enjety Rohith</h4>
-              <p><em></em></p>
-              <ul>
-                <li> <p> <span class="interactive-word" onclick="openPDF()">Resume</span></p> </li>
-                <li><p>I am a certified Google-Cloud Professional Cloud Architect.</p> </li>
-              
-                <li>I achieved  certificate by learning the bug-bounty hunting on the real time scenario's on the tmg.sec website</li>
-               <li>I worked with several operating systems i had a Intermidiate level of understanding the BASH</li>
-              </ul>
-            </div>
-
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>computer science & engineering (cyber security)</h4>
-              <h5>2021 - 2025</h5>
-              <p><em>Sree Vidyanikethan Engineering College , Tirupati</em></p>
-              <p>I am studying in the computer science and engineering with an cgpa of 9.3</p>
-            </div>
-            <div class="resume-item">
-              <h4> Intermidiate </h4>
-              <h5>2019 - 2021</h5>
-              <p><em>Sree Chaitanya Junior College , Tirupati</em></p>
-              <p>I completed my inter with the percentage of 96.2</p>
-            </div>
-            <div class="resume-item">
-              <h4> 10th standard</h4>
-              <h5> 2018 - 2019 </h5>
-              <p><em>Bhashyam high School , Tirupati</em></p>
-              <p>I completed my 10th class with a cgpa of 9.8</p>
-            </div>
-          </div>
-      
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Contact</h2>
-          <p></p>
-        </div>
-
-        <div class="row" data-aos="fade-in">
-
-          <div class="col-lg-5 d-flex align-items-stretch">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p>A.Rangampeta , Tirupati ,517102</p>
-              </div>
-
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>rohithenjety@gmail.com</p>
-              </div>
-
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p>+91 9392390887</p>
-              </div>
-
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124079.83331474535!2d79.3439295302497!3d13.627638825377899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4d4b0f88620427%3A0xcf4152d1daca0cac!2sTirupati%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1708965050854!5m2!1sen!2sin" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
-
-            </div>
-
-          </div>
+						<!-- 04 -->
 <!--
-          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="form-group col-md-6">
-                  <label for="name">Your Name</label>
-                  <input type="text" name="name" class="form-control" id="name" required>
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email" required>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="name">Subject</label>
-                <input type="text" class="form-control" name="subject" id="subject" required>
-              </div>
-              <div class="form-group">
-                <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-          </div>
+						<article class="project">
+							<a
+								href="https://covid-map-dashboard.netlify.app/"
+								target="_blank"
+								rel="noreferrer"
+								class="project-img"
+								><img
+									src="./assets/covid-map.jpg"
+									alt="covid map dashboard website screenshot"
+									title="covid map dashboard"
+							/></a>
+							<div>
+								<h3>04</h3>
+								<h2>Covid Map Dashboard</h2>
+								<p>
+									A look at the current Global Coronavirus (Covid-19) cases
+									including confirmed and recovered cases, total deaths, active
+									cases, critical cases etc with map to indicate individual
+									country confirmed cases. It also incorporate graphs to
+									visualize the global cases.
+								</p>
+								<ul class="tech-stack">
+									<li>React</li>
+									<li>CSS Modules</li>
+									<li>Axios</li>
+									<li>Context Api (useContext)</li>
+								</ul>
+								<ul class="project-links">
+									<li>
+										<a
+											href="https://covid-map-dashboard.netlify.app/"
+											target="_blank"
+											rel="noreferrer"
+											class="hover-effect">
+											Live Site →
+										</a>
+									</li>
 
-        </div>
+									<li>
+										<a
+											href="https://github.coashboard"
+											target="_blank"
+											rel="noreferrer"
+											class="hover-effect">
+											Github →
+										</a>
+									</li>
+								</ul>
+							</div>
+						</article>
+          -->
+						<!-- 05 -->
+             <!--
+						<article class="project">
+							<a
+								href="https://iracker/"
+								target="_blank"
+								rel="noreferrer"
+								class="project-img"
+								><img
+									src="./assets/ipaddress-tracker.jpg"
+									alt="ip address tracker website screenshot"
+									title="ip address tracker"
+							/></a>
+							<div>
+								<h3>05</h3>
+								<h2>IP Address Tracker</h2>
+								<p>
+									Track any Ip address in the world and view their current
+									location, where the Ip was registered, timezone, and isp. It
+									also indicates the current location of the Ip Address on a
+									map.
+								</p>
+								<ul class="tech-stack">
+									<li>HTML</li>
+									<li>CSS</li>
+									<li>Javascript</li>
+									<li>Chart js</li>
+									<li>Leaflet js</li>
+								</ul>
+								<ul class="project-links">
+									<li>
+										<a
+											href="httpsacker/"
+											target="_blank"
+											rel="noreferrer"
+											class="hover-effect"
+											>Live Site →</a
+										>
+									</li>
+									<li>
+										<a
+											href="https://gicker"
+											target="_blank"
+											rel="noreferrer"
+											class="hover-effect"
+											>Github →</a
+										>
+									</li>
+								</ul>
+							</div>
+						</article>
 
-      </div>
-    -->
-    </section><!-- End Contact Section -->
+					</section>  -->
 
-  </main><!-- End #main -->
+					<!-- others -->
+					<!-- <section class="other-noteworthy-project" data-aos="fade-up">
+						<h3>Other Noteworthy Projects</h3>
+						<ul class="other-projects">
+							<li>
+								<a
+									href="https://rest-countries-with-sveltekit.vercel.app/"
+									target="_blank"
+									rel="noreferrer"
+									><img
+										src="./assets/rest-countries.png"
+										alt="rest countries page screenshot" />
+									<div>
+										<h4>Rest Countries App</h4>
+										<p>
+											Displays all the countries in the world, their population,
+											region and capital. Search for any country and filter
+											based on region with dark mode
+										</p>
+										<ul>
+											<li>Svelte/SvelteKit</li>
+											<li>Tailwind CSS</li>
+										</ul>
+									</div></a
+								>
+							</li>
+							<li>
+								<a
+									href="https:rch/"
+									target="_blank"
+									rel="noreferrer"
+									>
+									<img
+										src="./assets/joke-bot.jpg"
+										alt="joke web bot page screenshot" />
+									<div>
+										<h4>Joke Web Bot</h4>
+										<p>
+											Web bot searches for jokes on the internet by clicking on 'get a joke button' and reads out the joke to you using the 'speechsynthesis api'.
+										</p>
+										<ul>
+											<li>React js</li>
+										</ul>
+									</div></a
+								>
+							</li>
+						</ul>
+					</section>
+				</div>
+			</section> -->
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <div class="copyright">
-        &copy; <strong><span>rohithenjety</span></strong>
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
-       
-      </div>
-    </div>
-  </footer><!-- End  Footer -->
+			<!-- contact section -->
+			<section class="contact" data-aos="fade-up">
+				<div class="container">
+					<p class="subtitle">If any vacany? Hire me!</p>
+					<h2 class="title">Let's Work Together</h2>
+					<p class="info">
+						Feel free to reach out if you're looking to hire, just want to
+						connect.
+					</p>
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+					<div>
+						<a href="mailto:rohithenjety@gmail.com" class="mail-link hover-effect"
+							>Get in touch →</a
+						>
+						<!-- <small>(or copy) rohithenjety@gmail.com</small> -->
+					</div>
+				</div>
+			</section>
+		</main>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-
-  <script>
-    function openPDF() {
-        window.open('rohith_resume.pdf', '_blank');
-    }
-</script>
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-</body>
-
+		<footer class="footer" id="contact">
+			<div class="container">
+				<p>&copy; <span id="date"></span> Rohith Enjety</p>
+				<div>
+					<ul>
+						<li>
+							<a
+								href="https://github.com/rohithenjety/"
+								rel="noreferrer"
+								target="_blank"
+								class="hover-effect"
+								>Github</a
+							>
+						</li>
+						<li>
+							<a
+								href="https://x.com/RohithEnjety"
+								rel="noreferrer"
+								target="_blank"
+								class="hover-effect"
+								>Twitter</a
+							>
+						</li>
+            <li>
+							<a
+								href="https://www.instagram.com/rohithenjety/"
+								rel="noreferrer"
+								target="_blank"
+								class="hover-effect"
+								>Instagram</a
+							>
+						</li>
+					</ul>
+					<a href="#top" class="top">
+						<p class="scroll">scroll <span>to top</span></p>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							style="fill: currentColor">
+							<title>scroll to top</title>
+							<path
+								d="m6.293 11.293 1.414 1.414L12 8.414l4.293 4.293 1.414-1.414L12 5.586z"></path>
+							<path
+								d="m6.293 16.293 1.414 1.414L12 13.414l4.293 4.293 1.414-1.414L12 10.586z"></path>
+						</svg>
+					</a>
+				</div>
+			</div>
+		</footer>
+	</body>
 </html>
